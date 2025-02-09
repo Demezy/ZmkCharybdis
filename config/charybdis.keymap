@@ -72,15 +72,6 @@
         time-to-live-ms = <750>;
     };
 
-    behaviors {
-        hyper: hyper_key {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HYPER";
-            #binding-cells = <0>;
-            bindings = <&kp RG(RA(RS(RCTRL)))>, <&none>;
-            mods = <0>;
-        };
-    };
 
 #define DEF 0
 #define MOD 1
@@ -95,7 +86,7 @@
 &kp TAB     &kp Q         &kp W   &kp E      &kp R   &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P      &kp LEFT_BRACKET
 &kp LSHIFT  &kp A         &kp S   &kp D      &kp F   &kp G        &kp H      &kp J      &kp K      &kp L    &kp SEMI   &kp APOS
 &kp LCTRL   &kp Z         &kp X   &kp C      &kp V   &kp B        &kp N      &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-                                  &kp SPACE  &mo BTMD   &mkp LCLK    &kp ENTER  &kp hyper
+                                  &kp SPACE  &mo BTMD   &mkp LCLK    &kp ENTER  &kp &mt LC(LS(LA(LGUI))) END
                                              &mo MOD   &mkp RCLK    &kp LGUI
             >;
         };
